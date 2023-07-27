@@ -1,11 +1,14 @@
 name: Python Test
-'on': push
+"on":
+  push:
+    branches:
+      - master
 jobs:
   my-job:
     runs-on: Ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World!" 
+        run: echo "Hello World!"
 
 # .github/workflows/python-test.yml
 # name: Python Test
