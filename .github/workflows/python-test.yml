@@ -1,36 +1,36 @@
-# name: Python Test
-# 'on': push
-# jobs:
-#   my-job:
-#     runs-on: Ubuntu-latest
-#     steps:
-#       - name: my-step
-#         run: echo "Hello World!" 
+name: Python Test
+'on': push
+jobs:
+  my-job:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!" 
 
 # .github/workflows/python-test.yml
-name: Python Test
+# name: Python Test
 
-"on":
-  push:
-    branches:
-      - master # Adjust the branch name as needed
+# "on":
+#   push:
+#     branches:
+#       - master # Adjust the branch name as needed
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
         
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.9" # Choose the Python version you want to use
+#       - name: Set up Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: "3.9" # Choose the Python version you want to use
 
-      - name: Install dependencies
-        run: echo "Hello World!"
+#       - name: Install dependencies
+#         run: echo "Hello World!"
 #         run: pip install -r requirements.txt # You can include this if you have dependencies
 
 #       - name: Run tests
