@@ -1,4 +1,4 @@
-name: hello-world4
+name: hello-world5
 on:
   push:
     branches:
@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+        
+      - name: Checkout code
+        uses: actions/checkout@v2
 
 # .github/workflows/python-test.yml
 # name: Python Test
