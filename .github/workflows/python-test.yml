@@ -22,6 +22,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -29,7 +30,8 @@ jobs:
           python-version: "3.x" # Choose the Python version you want to use
 
       - name: Install dependencies
-        run: pip install -r requirements.txt # You can include this if you have dependencies
+        run: echo "Hello World!"
+#         run: pip install -r requirements.txt # You can include this if you have dependencies
 
       - name: Run tests
         run: pytest # This assumes you have pytest installed in your project
