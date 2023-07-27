@@ -1,5 +1,8 @@
-name: hello-world2
-on: push
+name: hello-world3
+on:
+  push:
+    branches:
+      - master # Adjust the branch name as needed
 jobs:
   my-job:
     runs-on: ubuntu-latest
