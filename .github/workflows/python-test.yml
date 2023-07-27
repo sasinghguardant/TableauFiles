@@ -1,8 +1,5 @@
-name: Python Test
-on:
-  push:
-    branches:
-      - master
+name: hello-world2
+on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
