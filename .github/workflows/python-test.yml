@@ -1,11 +1,11 @@
 name: Python Test
-"on":
+on:
   push:
     branches:
       - master
 jobs:
   my-job:
-    runs-on: Ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: my-step
         run: echo "Hello World!"
