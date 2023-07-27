@@ -1,26 +1,8 @@
-# .github/workflows/python-test.yml
-name: Python Test
-
-on:
-  push:
-    branches:
-      - master  # Adjust the branch name as needed
-
+name: hello-world
+on: push
 jobs:
-  test:
-    runs-on: Microsoft-latest
-
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9.13'  # Choose the Python version you want to use
-
-      - name: Install dependencies
-        run: pip install pytest  # You can include this if you have dependencies
-
-      - name: Run tests
-        run: pytest  # This assumes you have pytest installed in your project
+      - name: my-step
+        run: echo "Hello World!"
